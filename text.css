@@ -19,3 +19,24 @@ body {
   font-style: italic;
   font-variant: small-caps;
 }
+
+/** Descendant Selector */
+/*! p elementinin içerisindeki
+span'lerin rengini red yap */
+/* p span {
+  color: red;
+} */
+
+#my-body .text-style span {
+  color: red;
+  text-decoration: overline;
+}
+
+.decoration {
+  color: green;
+  text-decoration: overline; /*?ust cizgi*/
+  text-decoration: underline; /*?alt cizgi*/
+  text-decoration: line-through;
+  /*? üzerini ciz*/
+  text-decoration: none; /*? defeult*/
+}
