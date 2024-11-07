@@ -18,25 +18,41 @@ body {
   /*? Stil */
   font-style: italic;
   font-variant: small-caps;
+  /*? Hizalama left, right, center, justify*/
+  text-align: justify;
 }
 
 /** Descendant Selector */
-/*! p elementinin içerisindeki
-span'lerin rengini red yap */
+/*! p elementinin içerisindeki span'lerin rengini red yap */
 /* p span {
   color: red;
 } */
 
 #my-body .text-style span {
   color: red;
-  text-decoration: overline;
 }
 
 .decoration {
   color: green;
+
   text-decoration: overline; /*?ust cizgi*/
   text-decoration: underline; /*?alt cizgi*/
   text-decoration: line-through;
   /*? üzerini ciz*/
   text-decoration: none; /*? defeult*/
+}
+
+.transformation {
+  color: blueviolet;
+  text-transform: capitalize;
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: none;
+}
+
+.spacing {
+  color: yellowgreen;
+  letter-spacing: 4px; /*? Harfler arasi mesafe*/
+  word-spacing: 10px; /*?Kelimler arasi mesafe*/
+  line-height: 1.4; /*? satir yükseliği*/
 }
